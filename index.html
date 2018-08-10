@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Rohan Kangutkar | Web Developer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Do+Hyeon|Libre+Franklin|Abril+Fatface" rel="stylesheet">
+</head>
+<body>
+	<nav id="navbar-main" class="navbar">
+		<ul id="menu-list">
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#me-id">Me</a></li>
+			<li><a href="#int-id">Interests</a></li>
+			<li><a href="#proj-id">Projects</a></li>
+			<li><a href="#contact-id">Contact</a></li>
+			<li><a href="javascript:void(0);" class="icon" onclick="hamburgerBarsMenu()"><i class="fas fa-bars"></i></a></li>
+		</ul>
+	</nav>
+	<div class="container-banner">
+		<div>
+			<p>Hi There! This is,</p>
+			<h1>Rohan</h1>
+			<p>I am a Web Developer</p>
+		</div>
+		<div>
+			<a href="#"><i class="fas fa-angle-double-down"></i></a>
+		</div>
+	</div>
+	<section class="me" id="me-id">
+		<div class="section-title">
+			<h1>About Me</h1>
+		</div>
+		<div class="row">
+	       	<div class="paragraph">
+	            Mumbai-based web developer who likes watching movies and series. I have always been a curious and passionate person, who 
+				never takes "quitting" as an option. With  the Bachelors degree in IT, I started my carrier with Marketing. I have a 
+				working experience as Business Development Manager, which taught me crucial things about marketing, that are applicable in day to day life.<br> 
+				But honestly, Marketing I could do and Programming i wanted to do, also some of my friends motivated me to 
+				chase what I wanted to do. So, after spending a successful year in marketing I chose to switch my career path into 
+				"DEVELOPMENT WORLD".<br>
+				To code something and see the output excites me. I chose PHP/Mysql to begin as a programmer, I end up getting an internship for the same. Within a month I learnt PHP/MySql. Then as time passed I also learnt Javascript, 
+				Jquery, Bootstrap and Wordpress, within a span of 3 months. I have developed 2 PhP/MySql based Web Apps & 4 Wordpress based websites.<br>
+				As I said in the begining I am the curious kind, I am still 
+				working and getting better at all the above technologies. With this Learning attitude, I am adapting Javascript as a new 
+				platform, to grow. Goal is to become a successful MEAN Stack Developer.        
+	        </div>
+	        <div class="image">
+	                <img src="img/profile.jpg" class="my-image">
+	        </div>
+	    </div>
+	</section>  
+	<section class="interests" id="int-id">
+		<div class="section-title">
+			<h1>Interests</h1>
+		</div>
+		<div class="section-items">
+			<section class="meanStack"><img src="interests/mean_logo.png"></section>
+			<section class="python"><img src="interests/py.png"></section>
+			<section class="java"><img src="interests/java.png"></section>
+			<section class="android"><img src="interests/android.png"></section>
+		</div>
+	</section> 
+	<section class="projects" id="proj-id">
+		<div class="section-title">
+			<h1>Projects</h1>
+		</div>
+		<div class="proj-items">
+			<section class="proj-section-item"><img src="screenshots/token_management.png"></section>
+			<section class="proj-section-item"><img src="screenshots/token_management2.png"></section>
+			<section class="proj-section-item"><img src="screenshots/token_management3.png"></section>
+			<section class="proj-section-item"><img src="screenshots/oxypro_website.png"></section>
+			<section class="proj-section-item"><img src="screenshots/oxypro_website2.png"></section>
+			<section class="proj-section-item"><img src="screenshots/portfolio.png"></section>
+		</div>
+	</section>  
+	<section class="contact" id="contact-id">
+		<div class="section-title">
+			<h1>Contact</h1>
+		</div>
+		<section class="row">
+				<p>rohankangutkar170594@gmail.com</p>
+			<div class="icon-group">
+                <img src="icons/outlook.png" class="socio-icon">
+                <img src="icons/twitter.png" class="socio-icon">
+                <img src="icons/linkedin.png" class="socio-icon">
+                <img src="icons/instagram.png" class="socio-icon">
+            </div>
+		</section>
+	</section>
+	<script type="text/javascript">
+		let navbar = document.getElementById("navbar-main");
+		window.onscroll = () => {
+			scroll();
+		} 
+		let scroll = () => {
+			if(document.body.scrollTop > 32 || document.documentElement.scrollTop > 32){
+				navbar.style.background = "#666";
+				navbar.style.opacity = "0.5";
+				// document.getElementsByClassName("visible").style.color = "white";
+			}else{
+				navbar.style.background = "transparent";
+				navbar.style.opacity = "1.0";
+			}
+		}
+		let hamburgerBarsMenu = () => {
+			let navbar = document.getElementById("navbar-main");
+			if(navbar.className === "navbar"){
+				navbar.className += " responsive";
+			}else{
+				navbar.className = "navbar";
+				}
+			}
+	</script>	
+</body>
+</html>
